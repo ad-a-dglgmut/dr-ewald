@@ -1,0 +1,21 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import p1 from "../../img/p1.png"
+    import PDList from "../../components/PDList-en"
+    import { DATA_EN} from "@/service/data";
+    const lang = DATA_EN 
+---
+
+<PagesLayout title="Pediatric Dentistry" description="Nurturing Young Smiles with Pediatric Dentistry | Expert Care for Children's Oral Health | Discover Gentle and Effective Dental Solutions for Kids">
+<div  class={'mx-auto'}>
+            <div class="h-48"></div>
+            <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.pTitle}</h3></div>
+            <img class=" float-right mb-3 ml-3 rounded-lg" src={p1} alt="" />
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.pTitle1}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.pBio1}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.pTitle2}</h4>
+            <PDList/> 
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.pTitle3}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.pBio3}</p>
+        </div>
+</PagesLayout>

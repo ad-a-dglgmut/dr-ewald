@@ -1,0 +1,26 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import { DATA_EN } from "@/service/data";
+    import hd8 from "../../img/hd8.png"
+    const lang = DATA_EN
+---
+
+
+<PagesLayout title="Dental Reflex" description="Unveiling Dental Reflex Connections | Explore How Oral Health Relates to Overall Wellness ">
+<div class={ 'mx-auto'}>
+            <div class="h-48"></div>
+            <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle10}</h3></div>
+            <img class=" rounded-lg float-right mb-3 ml-3" src={hd8} alt="" />
+            <p class="mb-6 mt-6 font-medium">{lang.drBio1}</p>
+            <p class="mb-6 mt-6 font-medium">{lang.drBio2}</p>
+            <ul class="mb-6 ml-6 mt-6 text-gray-800">
+                <li>{lang.drL1}</li>
+                <li>{lang.drL2}</li>
+                <li>{lang.drL3}</li>
+                <li>{lang.drL4}</li>
+            </ul>
+            <p class="mb-6 mt-6 text-gray-800">{lang.drBio3}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.drTitle}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.drBio4}</p>
+        </div>
+</PagesLayout>

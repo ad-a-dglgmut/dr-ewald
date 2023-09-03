@@ -1,0 +1,23 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import ProthesesList from "../../components/ProthesesList-en"
+    import b1 from "../../img/b1.png";
+    import b7 from "../../img/b7.png";
+    import { DATA_EN } from "@/service/data";
+    const lang = DATA_EN
+---
+
+<PagesLayout title="Protheses" description="Discover Advanced Dental Prostheses for Restoring Function and Beauty | Expert Insights on Modern Prosthetic Solutions">
+<div class={ 'mx-auto'}>
+            <div class="h-48"></div>
+            <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.bTitle}</h3></div>
+            <img class="float-right mb-3 ml-3 rounded-lg" src={b1} alt="" />
+            <h4 class="my-6 mt-6 text-xl font-semibold">{lang.bTitlebjorn}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.bBio1}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.bTitle1}</h4>
+
+            <ProthesesList/>
+            <img class="rounded-lg" src={b7} alt="" />
+            <p class="mb-6 mt-6 text-gray-800">{lang.bBio10}</p>
+        </div>
+</PagesLayout>

@@ -1,0 +1,73 @@
+---
+import Navbar from "../../components/Navbar";
+import { DATA_DEU } from "@/service/data";
+import Footer from "@/components/Footer";
+import img from "../../img/img2.jpg";
+import GalleryContent from "@/components/Gallery";
+import arwRight from "../../img/arrowright.svg"
+import arwLeft from "../../img/arrowleft.svg"
+import logoSmall from "../../img/logosmall.png"
+const lang = DATA_DEU;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={logoSmall} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Gallery</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Navbar client:only />
+    <div class="mt-48 md:mx-10">
+      <div
+        class="bg-orange-500 p-2 text-white font-semibold w-full mb-20 text-2xl"
+      >
+        <h2>Gallery</h2>
+
+      </div>
+      <div id="default-carousel" class="relative w-full overflow-hidden" data-carousel="slide">
+        <div class="relative h-96  overflow-hidden rounded-lg">
+          <GalleryContent />
+        </div>
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full "
+          >
+           <img src={arwLeft} alt=""> 
+              
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full "
+          >
+           <img src={arwRight} alt=""> 
+              
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <footer>
+      <Footer client:only/>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
+    ></script>
+  </body>
+</html>

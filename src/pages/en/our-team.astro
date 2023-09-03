@@ -1,0 +1,147 @@
+---
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/client";
+import PagesLayout from "../../layout/PagesLayout.astro";
+import Dr1M from "../../components/Dr1M-en";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
+import { DATA_EN } from "../../service/data";
+import Dr1D from "@/components/Dr1D-en";
+import Dr2M from "@/components/Dr2M-en";
+import Dr2D from "@/components/Dr2D-en";
+const lang = DATA_EN;
+const langQuery = await getDocs(collection(db, "DATA_EN"));
+let data: string | any = [""];
+const storage = getStorage();
+langQuery.forEach((doc) => {
+  data.push(doc.data());
+});
+
+let img1: any;
+let img2: any;
+let img3: any;
+let img4: any;
+
+await getDownloadURL(ref(storage, "1.jpg")).then((url) => {
+  img1 = url;
+});
+await getDownloadURL(ref(storage, "2.png")).then((url) => {
+  img2 = url;
+});
+await getDownloadURL(ref(storage, "3.png")).then((url) => {
+  img3 = url;
+});
+await getDownloadURL(ref(storage, "4.png")).then((url) => {
+  img4 = url;
+});
+let titleStyle = "";
+if (!data[4].hasM) {
+  titleStyle = "hidden";
+}
+---
+
+<PagesLayout title="Unser Team">
+  <div class="mt-48">
+    <div class="mb-28">
+      <div
+        class="bg-orange-500 p-2 text-white font-semibold w-full mb-20 text-2xl"
+      >
+        <h2>{lang.title2}</h2>
+      </div>
+      <img class="h-96 w-96 rounded-lg float-right" src={img1} alt="" />
+      <h3 class="text-5xl decoration-orange-500 underline mb-16">
+        Dr. Nadica Ewald
+      </h3>
+      <div class="mb-16 block">
+        <p>{data[3].info}</p>
+        <p>Birth Date: {data[3].birthInfo}</p>
+        <p>Civil Status: {data[3].civilStatus}</p>
+      </div>
+      <span class="text-3xl decoration-orange-500 underline"
+        >Work Experience and Training</span
+      >
+      <div class="mt-16 mb-16 block">
+        <p>- {data[3].aT1}</p>
+        <p>- {data[3].aT2}</p>
+        <p>- {data[3].aT3}</p>
+        <p>- {data[3].aT4}</p>
+      </div>
+      <span class="text-3xl decoration-orange-500 underline"
+        >Diplomas and Further Training</span
+      >
+      <br />
+      <a class="mt-10 mb-10 text-orange-500 font-medium" href="/de/diplomas"
+        >See Diplomas</a
+      >
+      <div class="mt-16 mb-16 block">
+        <Dr1D />
+      </div>
+      <span class="text-3xl decoration-orange-500 underline">Memberships</span>
+      <div class="mt-16 block">
+        <Dr1M />
+      </div>
+    </div>
+    <div class="mb-28">
+      <img class="h-72 w-96 rounded-lg float-right" src={img2} alt="" />
+      <h3 class="text-5xl decoration-orange-500 underline mb-16">
+        {data[4].name}
+      </h3>
+      <div class="mb-16 block">
+        <p>{data[3].info}</p>
+        <p>Birth Date: {data[3].birthInfo}</p>
+        <p>Civil Status: {data[3].civilStatus}</p>
+      </div>
+      <span class="text-3xl decoration-orange-500 underline"
+        >Work Experience and Training</span
+      >
+      <div class="mt-16 mb-16 block">
+        <p>- {data[4].aT1}</p>
+        <p>- {data[4].aT2}</p>
+        <p>- {data[4].aT3}</p>
+        <p>- {data[4].aT4}</p>
+        <p>- {data[4].aT5}</p>
+        <p>- {data[4].aT6}</p>
+        <p>- {data[4].aT7}</p>
+        <p>- {data[4].aT8}</p>
+        <p>- {data[4].aT9}</p>
+        <p>- {data[4].aT10}</p>
+        <p>- {data[4].aT11}</p>
+        <p>- {data[4].aT12}</p>
+        <p>- {data[4].aT13}</p>
+        <p>- {data[4].aT14}</p>
+      </div>
+      <span class="text-3xl decoration-orange-500 underline"
+        >Diplomas and Further Training</span
+      >
+
+      <div class="mt-16 mb-16 block">
+        <Dr2D />
+      </div>
+      <span class=` text-3xl decoration-orange-500 underline ${titleStyle}`
+        >Memberships</span
+      >
+      <div class="mt-16 block">
+        <Dr2M />
+      </div>
+    </div>
+    <div class="mb-28">
+      <img class="h-72 w-96 rounded-lg float-right" src={img3} alt="" />
+      <h3 class="text-5xl decoration-orange-500 underline mb-16">
+        {data[1].name}
+      </h3>
+      <p class="mb-16">{data[1].bio}</p>
+      <p>Civil Status: {data[1].civilStatus}</p>
+      <p>Langugages: {data[1].sprachen}</p>
+      <p>Hobbies: {data[1].hobbies}</p>
+    </div>
+    <div class="mb-28">
+      <img class="h-72 w-96 rounded-lg float-right" src={img4} alt="" />
+      <h3 class="text-5xl decoration-orange-500 underline mb-16">
+        {data[2].name}
+      </h3>
+      <p class="mb-16">{data[2].bio}</p>
+      <p>Zivilstand: {data[2].civilStatus}</p>
+      <p>Sprachen: {data[2].sprachen}</p>
+      <p>Hobbies: {data[2].hobbies}</p>
+    </div>
+  </div>
+</PagesLayout>

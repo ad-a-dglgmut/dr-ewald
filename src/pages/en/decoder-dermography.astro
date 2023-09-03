@@ -1,0 +1,42 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import { DATA_EN } from "@/service/data";
+import hd5 from "../../img/hd5.jpg";
+const lang = DATA_EN;
+---
+
+<PagesLayout title="Decoder Dermography" description="Explore Decoder Dermography: Bioelectrical Measurement Method for Regulation of the Whole Body">
+  <div class={"mx-auto"}>
+    <div class="h-48"></div>
+    <div class=" bg-orange-500">
+      <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle5}</h3>
+    </div>
+    <img class=" rounded-lg float-right mb-3 ml-3" src={hd5} alt="" />
+    <h4 class="my-6 text-xl font-semibold">{lang.ddTitle}</h4>
+    <p class="mb-6 mt-6 ">{lang.ddBio1}</p>
+    <h4 class="mb-6 text-xl font-semibold">{lang.ddTitle1}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.ddBio2}</p>
+    <h4 class="mb-6 text-xl font-semibold">{lang.ddTitle2}</h4>
+    <ul class="mb-6 mt-6 ml-6 text-gray-800">
+      <li>{lang.ddL1}</li>
+      <li>{lang.ddL2}</li>
+      <li>{lang.ddL3}</li>
+      <li>{lang.ddL4}</li>
+      <li>{lang.ddL5}</li>
+      <li>{lang.ddL6}</li>
+      <li>{lang.ddL7}</li>
+      <li>{lang.ddL8}</li>
+      <li>{lang.ddL9}</li>
+    </ul>
+    <h4 class="mb-6 text-xl font-semibold">{lang.ddTitle3}</h4>
+    <ul class="mb-6 mt-6 ml-6 text-gray-800">
+      <li>{lang.ddL10}</li>
+      <li>{lang.ddL11}</li>
+      <li>{lang.ddL12}</li>
+    </ul>
+    <h4 class="mb-6 text-xl font-semibold">{lang.ddTitle4}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.ddBio3}</p>
+    <h4 class="mb-6 text-xl font-semibold">{lang.ddTitle5}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.ddBio4}</p>
+  </div>
+</PagesLayout>

@@ -1,0 +1,19 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import ho1 from "../../img/ho1.png";
+import { DATA_DEU } from "@/service/data";
+import HOList from "../../components/HOList"
+const lang = DATA_DEU;
+---
+
+<PagesLayout title="Ganzheitliche Kieferorthopädie" description="Entdecken Sie die ganzheitliche Kieferorthopädie: Ein ausgewogener Ansatz zur Zahnausrichtung">
+  <div class={"mx-auto mt-48"}>
+    
+    <img class="float-right mb-3 ml-3 rounded-lg" src={ho1} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.hoTitle1}</h4>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.hoTitlebjorn}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.hoBio1}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.hoTitlebjorn2}</h4>
+    <HOList /> 
+  </div>
+</PagesLayout>

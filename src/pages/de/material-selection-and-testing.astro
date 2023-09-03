@@ -1,0 +1,16 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import { DATA_DEU } from "@/service/data";
+const lang = DATA_DEU;
+---
+
+<PagesLayout title="Materialauswahl und Materialtestung" description="Umfassende Prüfung von Materialien und Medikamenten | Gewährleistung von Sicherheit und Wirksamkeit">
+  <div class={"mx-auto"}>
+    <div class=" h-48"></div>
+    <div class=" bg-orange-500">
+      <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle6}</h3>
+    </div>
+    <img class=" float-right mb-3 ml-3" src={""} alt="" />
+    <p class="mb-6 mt-6 text-gray-800">{lang.mmBio}</p>
+  </div>
+</PagesLayout>

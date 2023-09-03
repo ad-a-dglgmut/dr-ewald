@@ -1,0 +1,20 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import rc1 from "../../img/rc1.jpg"
+    import { DATA_EN } from "@/service/data";
+    const lang = DATA_EN
+---
+
+<PagesLayout title="Root Canals" description="Comprehensive Guide to Root Canals: Expert Insights and Procedures | Discover Modern Techniques for Pain-free Dental Health and Restoration">
+<div  class={ 'mx-auto'}>
+            <div class="h-48"></div>
+            <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.rcTitle}</h3></div>
+            <img class=" float-right mb-3 ml-3 rounded-lg" src={rc1} alt="" />
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.rcTitle1}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.rcBio1}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.rcTitle2}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.rcBio2}</p>
+            <h4 class="my-6 mt-6 text-xl font-semibold">{lang.rcTitle3}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.rcBio3}</p>
+        </div>
+</PagesLayout>

@@ -1,0 +1,23 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro"; 
+    import hd2 from "../../img/hd2.jpg" 
+    import { DATA_EN } from "@/service/data";
+    const lang = DATA_EN
+---
+
+<PagesLayout title="Neural Therapy" description="Discover the Benefits of Neural Therapy for Dental Wellness| Learn How Neural Therapy Can Transform Your Dental Experience">
+            <div  class={ 'mx-auto'}>
+                <div class="h-48"></div>
+                <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle2}</h3></div>
+                <img class=" rounded-lg float-right ml-3 mb-3" src={hd2} alt="" />
+                <p class=" mb-6 mt-6 text-gray-800">{lang.ntBio}</p>
+                <h4 class="mb-6 text-xl font-semibold">{lang.ntTitle1}</h4>
+                <p class=" mb-6 mt-6 text-gray-800"> {lang.ntBio1} </p>
+                <h4 class="mb-6 text-xl font-semibold">{lang.ntTitle2}</h4>
+                <p class=" mb-6 mt-6 text-gray-800">{lang.ntBio2}</p>
+                <h4 class="mb-6 text-xl font-semibold">{lang.ntTitle3}</h4>
+                <p class=" mb-6 mt-6 text-gray-800">{lang.ntBio3}</p>
+                <h4 class="mb-6 text-xl font-semibold">{lang.ntTitle4}</h4>
+                <p class=" mb-6 mt-6 text-gray-800">{lang.ntBio4}</p>
+            </div>
+</PagesLinterference 

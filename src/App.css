@@ -1,0 +1,20 @@
+@media (max-width: 1620px) {
+    .carousel-img {
+        height:100%;
+        object-fit: cover;
+    }
+}
+
+.mapped-item:last-child {
+
+    display: none;
+}
+
+body {
+  overflow-x: none;
+}
+
+@media (max-width:768px) 
+{
+  
+}

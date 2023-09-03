@@ -1,0 +1,39 @@
+---
+import Navbar from "../components/Navbar";
+const props = Astro.props;
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+import logoSmall from "../img/logosmall.png";
+import Footer from "../components/Footer";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={props.description} />
+    <link rel="icon" type="image/png" href={logoSmall} />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>{props.title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="flex min-h-[100vh] flex-col">
+    <header>
+      <nav>
+        <Navbar client:only />
+      </nav>
+    </header>
+
+    <article>
+      <div class="mx-2 md:mx-32">
+        <slot />
+      </div>
+    </article>
+
+    <footer class="mt-auto">
+      <Footer client:only />
+    </footer>
+  </body>
+</html>

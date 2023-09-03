@@ -1,0 +1,19 @@
+---
+import Slider from "../../components/medium/Slider";
+import PagesLayout from "@/layout/PagesLayout.astro";
+---
+
+<PagesLayout title="Blog">
+  <div class="mt-48">
+    <div
+      class="bg-orange-500 p-2 text-white font-semibold w-full mb-20 text-2xl"
+    >
+      <h2>Blog</h2>
+    </div>
+
+    <div class="bg-orange-500 mb-20" >
+      <h3 class="bg-white ml-3 pl-4 text-2xl">Neueste Beiträge</h3>
+    </div>
+    <Slider />
+  </div>
+</PagesLayout>

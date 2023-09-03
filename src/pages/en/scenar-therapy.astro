@@ -1,0 +1,18 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import hd4 from "../../img/hd4.jpg";
+import { DATA_EN } from "@/service/data";
+const lang = DATA_EN
+---
+
+<PagesLayout title="SCENAR-Therapy" description="SCENAR Therapy for Dental Health: Discover a New Dimension of Pain Relief | Expert Insights and Benefits of SCENAR Treatment">
+  <div class={"mx-auto"}>
+    <div class="h-48"></div>
+    <div class=" bg-orange-500">
+      <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle4}</h3>
+    </div>
+    <img class=" float-right mb-3 ml-3" src={hd4} alt="" />
+    <h4 class="my-6 text-xl font-semibold">{lang.scenarTitle}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.scenarBio}</p>
+  </div>
+</PagesLayout>

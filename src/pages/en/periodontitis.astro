@@ -1,0 +1,29 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import pa1 from "../../img/pa1.png";
+import { DATA_EN } from "@/service/data";
+import PeriodontitisList from "../../components/PeriodontitisList-en"
+const lang = DATA_EN;
+---
+
+<PagesLayout title="Periodontitis" description="Navigating Periodontitis: Expert Insights on Gum Disease Management | Discover Effective Treatment and Prevention Strategies for Healthy Gums">
+  <div class={"mx-auto mt-48"}>
+    
+    <img class="float-right mb-3 ml-3 rounded-lg" src={pa1} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.paTitle}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio1}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.paTitle1}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio2}</p>
+    <PeriodontitisList/>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio4}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.paTitle3}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio5}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.paTitlebjorn1}</h4>
+    <h4 class="mb-6 mt-6 font-semibold">{lang.paTitle4}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio6}</p>
+    <h4 class="mb-6 mt-6 font-semibold">{lang.paTitle5}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio7}</p>
+    <h4 class="mb-6 mt-6 font-semibold">{lang.paTitle6}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.paBio8}</p>
+  </div>
+</PagesLayout>

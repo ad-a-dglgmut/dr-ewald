@@ -1,0 +1,21 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import l1 from "../../img/l1.png";
+import l2 from "../../img/l2.png";
+import { DATA_DEU } from "@/service/data";
+const lang = DATA_DEU;
+---
+
+<PagesLayout title="Lumineers" description="Verwandeln Sie Ihr Lächeln mit Lumineers | Entdecken Sie minimalinvasive und ästhetische Dentallösungen">
+  <div class={"mx-auto"}>
+    <div class="h-48"></div>
+    <div class=" bg-orange-500">
+      <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.lTitle}</h3>
+    </div>
+    <img class=" float-right mb-3 ml-3 rounded-lg" src={l1} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.lTitle1}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.lBio1}</p>
+    <p class="mb-6 mt-6 text-gray-800">{lang.lBio2}</p>
+    <img class="rounded-lg" src={l2} alt="" />
+  </div>
+</PagesLayout>

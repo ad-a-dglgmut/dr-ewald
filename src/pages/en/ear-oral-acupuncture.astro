@@ -1,0 +1,18 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import { DATA_EN } from "@/service/data";
+    import hd7 from "../../img/hd7.png"
+    const lang = DATA_EN
+---
+
+<PagesLayout title="Mouth and Ear Acupuncture" description="Enhance Dental Wellness with Mouth and Ear Acupuncture | Explore Holistic Approaches for Oral Health">
+<div class={ 'mx-auto'}>
+            <div class="h-48"></div>
+            <img class=" rounded-lg float-right mb-8 ml-8" src={hd7} alt="" />
+            <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle9}</h3></div>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.eaTitle1}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.eaBio1}</p>
+            <h4 class="mb-6 text-xl font-semibold">{lang.eaTitle2}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.eaBio2}</p>
+        </div>
+</PagesLayout>

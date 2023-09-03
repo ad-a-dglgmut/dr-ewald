@@ -1,0 +1,22 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import w1 from "../../img/w1.png";
+import w2 from "../../img/w2.png";
+import { DATA_DEU } from "@/service/data";
+const lang = DATA_DEU;
+---
+
+<PagesLayout title="Zahnaufhellung">
+  <div class={"mx-auto"}>
+    <div class="h-48"></div>
+    <div class=" bg-orange-500">
+      <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.wTitle}</h3>
+    </div>
+    <img class=" float-right mb-3 ml-3 rounded-lg" src={w1} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.wTitle1}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.wBio1}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.wTitle2}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.wBio2}</p>
+    <img class="rounded-lg" src={w2} alt="" />
+  </div>
+</PagesLayout>

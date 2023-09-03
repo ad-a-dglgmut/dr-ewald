@@ -1,0 +1,28 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import { DATA_EN } from "@/service/data";
+import hd6 from "../../img/hd6.png";
+const lang = DATA_EN
+---
+
+<PagesLayout title="Ozone therapy" description="Elevate Your Dental Care with Ozone Therapy | Discover Ozone's Benefits in Dentistry | Innovative Solutions for Oral Health and Treatment">
+  <div class={"mx-auto"}>
+    <div class="h-48"></div>
+    <div class=" bg-orange-500">
+      <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle7}</h3>
+    </div>
+    <img class=" rounded-lg float-right mb-3 ml-3" src={hd6} alt="" />
+    <p class="mb-6 mt-6 text-gray-800">{lang.oBio1}</p>
+    <p class="mb-6 mt-6 ml-3 font-semibold">{lang.oBio2}</p>
+    <ul class="mt-6 ml-5 mb-6 text-gray-800">
+      <li>{lang.oL1}</li>
+      <li>{lang.oL2}</li>
+      <li>{lang.oL3}</li>
+      <li>{lang.oL4}</li>
+    </ul>
+    <h4 class=" text-xl font-semibold">{lang.oTitle1}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.oBio3}</p>
+    <h4 class=" text-xl font-semibold">{lang.oTitle2}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.oBio4}</p>
+  </div>
+</PagesLayout>

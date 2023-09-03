@@ -1,0 +1,34 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import td1 from "../../img/td1.png";
+    import ft1 from "../../img/ft1.png";
+    import ft2 from "../../img/ft2.png"
+    import { DATA_DEU } from "@/service/data";
+    const lang = DATA_DEU
+---
+
+<PagesLayout title="Füllung Therapie" description="Effektive Füllungstherapie für stärkere Zähne">
+    <div  class={'mx-auto'}>
+            <div class="h-48"></div>
+            <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.ftTitle}</h3></div>
+            <img class=" float-right mb-3 ml-3 rounded-lg" src={td1} alt="" />
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle1}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBio1}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle2}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBio2}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle3}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBiobjorn1}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle4}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBiobjorn2}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle5}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBiobjorn3}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle6}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBiobjorn4}</p>
+            <div class="w-full flex justify-center"><img src={ft1} alt="" /></div>
+            <p class="mb-6 mt-6 ml-3 font-semibold">{lang.ftBio3}</p>
+            <div class="w-full flex justify-center"><img src={ft2} alt="" /></div>
+            <p class="mb-6 mt-6 ml-3 font-semibold">{lang.ftBio4}</p>
+            <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.ftTitle7}</h4>
+            <p class="mb-6 mt-6 text-gray-800">{lang.ftBiobjorn5}</p>
+        </div>
+</PagesLayout>

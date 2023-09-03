@@ -1,0 +1,36 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import cmd1 from "../../img/cmd1.png";
+import cmd2 from "../../img/cmd2.png";
+import cmd3 from "../../img/cmd3.png";
+import { DATA_DEU } from "@/service/data";
+import CMDList from "../../components/CMDList";
+const lang = DATA_DEU;
+---
+
+<PagesLayout title="CMD Kopfschmerzen" description="Zahnheilkunde und CMD-Kopfschmerzen: Ursachen, Behandlung und Prävention">
+  <div class={"mx-auto mt-48"}>
+    <p class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle1}</p>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio1}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle2}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio2}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle3}</h4>
+    <img class="rounded-lg" src={cmd1} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle4}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio3}</p>
+    <img class="rounded-lg" src={cmd2} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitlebjorn1}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBiobjorn1}</p>
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitlebjorn2}</h4>
+
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio4}</p>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio5}</p>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio6}</p>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio7}</p>
+    <img class="rounded-lg" src={cmd3} alt="" />
+    <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle5}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio8}</p>
+
+    <CMDList />
+  </div>
+</PagesLayout>

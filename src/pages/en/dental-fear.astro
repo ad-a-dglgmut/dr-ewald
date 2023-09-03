@@ -1,0 +1,16 @@
+---
+    import PagesLayout from "@/layout/PagesLayout.astro";
+    import DentalFearList from "@/components/DentalFearList-en";
+    import { DATA_EN } from "@/service/data";
+    const lang = DATA_EN
+---
+
+<PagesLayout title="Fear of dentist">
+    <div class={'mx-auto'} >
+        <div class=" h-48"></div>
+        <div class=" bg-orange-500 p-2 text-white font-semibold w-full mb-20 text-2xl"><h2>{lang.dfTitle}</h2></div>
+        <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.dfTitle1}</h4>
+        <p class="mb-6 mt-6 text-gray-800">{lang.dfBio1}</p>
+        <DentalFearList />
+    </div>
+</PagesLayout>

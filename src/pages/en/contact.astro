@@ -1,0 +1,131 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import { DATA_EN } from "@/service/data";
+import email from "../../img/email.png";
+import fb from "../../img/facebook.svg";
+import instagram from "../../img/instagram.svg";
+import phone from "../../img/phone-call.png";
+import Mapbox from "../../mapbox/Mapbox.astro";
+import ContactForm from "../../components/ContactForm";
+import Toast from "../../components/Toast";
+const lang = DATA_EN;
+---
+
+<PagesLayout title="Contact">
+  <div class="h-48"></div>
+  <div class="bg-orange-500 p-2 text-white font-semibold w-full mb-20 text-2xl">
+    <h2>{lang.conTitle}</h2>
+  </div>
+
+  <div class="w-full flex mb-10">
+    <p class="mb-6 mt-6 text-gray-800 text-center">{lang.conBio}</p>
+  </div>
+  <div class="w-full flex justify-center">
+    <div class="flex flex-col">
+      <div class={"grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4"}>
+        <button
+          onclick=`{() => {
+              navigator.clipboard.writeText(
+                "dr.ewald@ganzheitliche-zahnaerztin.ch"
+              );
+            }}`
+        >
+          <div class="w-40 mb-5 md:mx-10">
+            <div class="w-full flex flex-col">
+              <div class="text-center">
+                <div class="w-full flex flex-col">
+                  <img
+                    src={email}
+                    class="w-[51px] h-[51px] self-center"
+                    alt=""
+                  />
+                </div>
+                <p class="self-center font-semibold text-orange-500">
+                  {lang.conL4}
+                </p>
+                <p class="text-gray-600">
+                  dr.ewald@ganzheitliche-zahnaerztin.ch
+                </p>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <a href="tel:071 351 72 09">
+          <div class="w-40 mb-5 md:mx-10">
+            <div class="w-full flex flex-col">
+              <div class="text-center">
+                <div class="w-full flex justify-center">
+                  <img
+                    src={phone}
+                    class="w-[51px] h-[51px] self-center"
+                    alt=""
+                  />
+                </div>
+                <p class="self-center font-semibold text-orange-500">
+                  {lang.conL2}
+                </p>
+                <p class="text-gray-600">071 351 72 09</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100063767641784">
+          <div class="w-40 mb-5 md:mx-10">
+            <div class="w-full flex flex-col">
+              <div class="text-center">
+                <div class="w-full flex justify-center">
+                  <img src={fb} class="w-[51px] h-[51px] self-center" alt="" />
+                </div>
+                <p class="self-center font-semibold text-orange-500">
+                  {lang.conL3}
+                </p>
+                <p class="text-gray-600">Zahnpraxis Dr.Ewald</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://instagram.com/zahnpraxis?igshid=ZGUzMzM3NWJiOQ==">
+          <div class="w-40 mb-5 md:mx-10">
+            <div class="w-full flex flex-col">
+              <img
+                src={instagram}
+                class="w-[51px] h-[51px] self-center"
+                alt=""
+              />
+              <p class="self-center font-semibold text-orange-500">
+                {lang.conL1}
+              </p>
+              <p class="text-gray-600 text-center">@zahnpraxis</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <ContactForm client:only />
+    </div>
+
+    <!-- <div>{lang.copied}</div> -->
+  </div>
+
+  <div id="mapContainer" class="h-96 w-full mt-24">
+    <div
+      class="absolute top-0 left-0 bg-orange-500 text-white font-semibold z-40 text-xl px-5"
+    >
+      Bahnhofstrasse 21, 9100 Herisau
+    </div>
+    <Mapbox
+      container="mapContainer"
+      latitude={47.38813}
+      longitude={9.27656}
+      zoom={17}
+      mapstyle="mapbox://styles/gossau/clig1sqkw006d01pgbpn483xl"
+      accesstoken="pk.eyJ1IjoiZ29zc2F1IiwiYSI6ImNsaWRlczh2eTBiYXozbHFmZ29sYjF1cXYifQ.bTtvo8YodMwY10_O1Ul2-w"
+      interactive={true}
+    />
+  </div>
+  <div class="fixed z-50 bottom-5 left-5">
+    <Toast client:only />
+  </div>
+</PagesLayout>

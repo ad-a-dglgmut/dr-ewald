@@ -1,0 +1,18 @@
+---
+import PagesLayout from "@/layout/PagesLayout.astro";
+import { DATA_EN } from "@/service/data";
+const lang = DATA_EN;
+---
+
+<PagesLayout title="Homeopathy" description="Exploring the Art of Homeopathy: Natural Healing and Holistic Wellness | Discover the Benefits of Homeopathic Medicine for Health and Balance">
+  <div class={"mx-auto"}>
+    <div class="h-48"></div>
+    <div class="bg-orange-500">
+      <h3 class="bg-white ml-3 pl-4 text-2xl">{lang.hdTitle8}</h3>
+    </div>
+    <h4 class="my-6 text-xl font-semibold">{lang.hTitle}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.hBio}</p>
+    <h4 class="text-xl font-semibold">{lang.hTitle2}</h4>
+    <p class="mb-6 mt-6 text-gray-800">{lang.hBio2}</p>
+  </div>
+</PagesLayout>
