@@ -232,7 +232,7 @@ export const DATA_EN = {
             <li>- Nutritional advice and oral hygiene advice</li>
             <li>- Child-friendly filling therapy (colorful fillings in milk teeth)</li>
             <li>- Fissure sealing also for milk teeth</li>
-            <li>- Education about orthodontic treatments. We attach particular importance to treatment with Bionator (see article) and work together with experienced general and holistic orthodontists</li>
+            <li>- Education about orthodontic treatments. We attach particular importance to treatment with Bionator (see article Holistic Orthodontics) and work together with experienced general and holistic orthodontists</li>
             <li>- Hypnosis and hypnotic language for relaxation</li>
         </ul>
     </>,
@@ -341,10 +341,10 @@ export const DATA_EN = {
     hoBio3: "Depending on the symptoms and necessity, we also treat with the following means:",
     hoL2: <>
         <ul className="mb-6 mt-6 text-gray-800">
-            <li>- Orthodontics with invisible splints: aligners or Invisalign DR.HINZAligner® are suitable as initial devices before the start of any other aligner treatment and thus shorten the treatment time considerably. Instead of more than 30 splints with the other aligner methods, only about 9 splints are necessary here.</li>
-            <li>- Expansion plates and the other aligner</li>
-            <li>- Palatal expansion, fixed</li>
-            <li>- Fixed multi-band Damon</li>
+            <li>- Orthodontics with <b>invisible splints</b>: <b>aligners</b> or <b>Invisalign</b> DR.HINZAligner® are suitable as initial devices before the start of any other aligner treatment and thus shorten the treatment time considerably. Instead of more than 30 splints with the other aligner methods, only about 9 splints are necessary here.</li>
+            <li>- <b>Expansion plates</b> and the other aligner</li>
+            <li>- <b>Palatal expansion</b>, fixed</li>
+            <li>- <b>Fixed multi-band Damon</b></li>
         </ul>
     </>,
     hoTitle3: "Supplementing holistic orthodontics",
@@ -518,7 +518,7 @@ export const DATA_EN = {
     copied:"Email copied!",
     f1:"Opening hours",
     f2:"Mon:  	08:00-12:00, 13:00-17:00",
-    f3:"Tue:  	08:00-12:00",
+    f3:"Tue:  	13:00-18:00",
     f4:"Wed-Fri:  	08:00-12:00, 13:00-17:00",
     sel:"Language",
     follow:"Follow us"
@@ -741,7 +741,7 @@ export const DATA_DEU = {
         <ul className="mb-6 mt-6 text-gray-800">
             <li>- Informieren Sie uns über Eigenheiten und Krankheiten Ihres Kindes! Wir wollen uns optimal auf Ihr Kind einstellen</li>
             <li>- Überlassen Sie uns die Führung Ihres Kindes! Ihr Kind soll im Mittelpunkt der Aufmerksamkeit stehen</li>
-            <li>- Praise your child after the treatment! Strengthened self-confidence motivates to try new things</li>
+            <li>- Loben Sie Ihr Kind nach der Behandlung! Gestärktes Selbstbewusstsein motiviert dazu, Neues auszuprobieren</li>
         </ul>
     </>,
     pBio2: `Im Kampf gegen die „bösen schwarzen Männchen“ sind wir die Verbündeten Ihres Kindes. Durch spezielle Behandlungsmethoden und eine kindgerechte Atmosphäre nehmen wir Ihren Kleinen die Angst. Und Ihr Kind wird begeistert von seinem Zahnarztbesuch erzählen...`,
@@ -761,7 +761,7 @@ export const DATA_DEU = {
             <li>- Ernährungsberatung und Mundhygiene Beratung</li>
             <li>- Kindgerechte Füllungstherapie (Bunte Füllungen im Milchgebiss)</li>
             <li>- Fissuren Versieglung auch bei Milchzähnen</li>
-            <li>- Aufklärung über Kieferorthopädische Behandlungen. Besonderes legen wir Wert auf Behandlung mit Bionator (Siehe Artikel) und arbeiten mit erfahrenen Allg. und Ganzheitlichen Kieferorthopäden zusammen</li>
+            <li>- Aufklärung über Kieferorthopädische Behandlungen. Besonderes legen wir Wert auf Behandlung mit Bionator (Siehe Artikel Ganzheitliche Kieferorthopädie) und arbeiten mit erfahrenen Allg. und Ganzheitlichen Kieferorthopäden zusammen</li>
             <li>- Hypnose und Hypnotische Sprache zu Entspannung</li>
         </ul>
     </>,
@@ -807,7 +807,7 @@ export const DATA_DEU = {
         </ul>
     </>,
     paList3: <>
-        <p className=" font-semibold ml-6">Periodontitis bacteria can:</p>
+        <p className=" font-semibold ml-6">Parodontitis-Bakterien können:</p>
         <ul className="mb-6 mt-6 text-gray-800">
             <li>- in die Blutbahn verschleppt werden (Bakteriämie) und dort eine Infektion verursachen</li>
             <li>- nach häufig wiederholten derartigen Infektionen Herz- oder Hirninfarkt, Fieber- und Rheumaschübe oder andere vaskuläre Erkrankungen auslösen (Arteriosklerose)</li>
@@ -870,10 +870,10 @@ Gerade in diesem Alter ist es wichtig, die Atmung zu optimieren und an der Körp
     hoBio3: "Je nach Symptomatik und Notwendigkeit eher selten behandeln wir auch mit folgenden Mitteln:",
     hoL2: <>
         <ul className="mb-6 mt-6 text-gray-800">
-            <li>- Kieferorthopädie mit unsichtbaren Schienen: Aligner oder Invisalign DR.HINZAligner® eignen sich als Initialgerät vor Beginn jeder anderen Aligner-Behandlung und verkürzen somit die Behandlungszeit ganz erheblich. Statt über 30 Schienen beim andere Aligner Methoden hier sind zirka nur 9 Scheinen notwendig.</li>
-            <li>- Dehnplatten und beim andere aligner</li>
-            <li>- Gaumennahterweiterung, festsitzend</li>
-            <li>- Festsizende Multiband Damon</li>
+            <li>- Kieferorthopädie mit <b>unsichtbaren Schienen</b>: <b>Aligner</b> oder <b>Invisalign</b> DR.HINZAligner® eignen sich als Initialgerät vor Beginn jeder anderen Aligner-Behandlung und verkürzen somit die Behandlungszeit ganz erheblich. Statt über 30 Schienen beim andere Aligner Methoden hier sind zirka nur 9 Scheinen notwendig.</li>
+            <li>- <b>Dehnplatten</b> und beim andere aligner</li>
+            <li>- <b>Gaumennahterweiterung</b>, festsitzend</li>
+            <li>- <b>Festsizende Multiband Damon</b></li>
         </ul>
     </>,
     hoTitle3: "Ergänzung der ganzheitliche Kieferorthopädie",
@@ -1048,7 +1048,7 @@ Gerade in diesem Alter ist es wichtig, die Atmung zu optimieren und an der Körp
     copied:"E-Mail kopiert!",
     f1:"Öffnungszeiten:",
     f2:"Mon:  	08:00-12:00, 13:00-17:00",
-    f3:"Die:  	08:00-12:00",
+    f3:"Die:  	13:00-18:00",
     f4:"Mit-Fre:  	08:00-12:00, 13:00-17:00",
     sel:"Sprache",
     follow:"Folge uns"

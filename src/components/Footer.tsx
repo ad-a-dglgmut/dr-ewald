@@ -50,7 +50,7 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://instagram.com/zahnpraxis?igshid=ZGUzMzM3NWJiOQ=="
+                    href="https://www.facebook.com/profile.php?id=100063767641784"
                     className="hover:underline"
                   >
                     Facebook

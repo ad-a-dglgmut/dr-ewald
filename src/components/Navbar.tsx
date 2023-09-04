@@ -15,6 +15,7 @@ const NavbarComp = () => {
       },
     },
   };
+  let langDec: string;
   let link: string;
   let lang: any;
   const changeLan = (input: string) => {
@@ -44,9 +45,11 @@ const NavbarComp = () => {
   ) {
     link = "de";
     lang = DATA_DEU;
+    langDec = "DEU";
   } else {
     link = "en";
     lang = DATA_EN;
+    langDec = "EN";
   }
 
   if (scrWidth >= 1800) {
@@ -67,14 +70,7 @@ const NavbarComp = () => {
                 >
                   <a>{lang.homepagesidebar1}</a>
                 </div>
-                <div
-                  onClick={() => {
-                    window.open(`/${link}/dental-fear`, "_self");
-                  }}
-                  className=" hover:cursor-pointer px-5 py-2 hover:text-white hover:bg-orange-500"
-                >
-                  <a>{lang.homepagesidebar4}</a>
-                </div>
+
                 <div
                   onClick={() => {
                     window.open(`/${link}/contact`, "_self");
@@ -200,6 +196,14 @@ const NavbarComp = () => {
                   className=" hover:cursor-pointer py-2 px-5 hover:text-white hover:bg-orange-500"
                 >
                   <a>{lang.hdS11}</a>
+                </div>
+                <div
+                  onClick={() => {
+                    window.open(`/${link}/dental-fear`, "_self");
+                  }}
+                  className=" hover:cursor-pointer px-5 py-2 hover:text-white hover:bg-orange-500"
+                >
+                  <a>{lang.homepagesidebar4}</a>
                 </div>
               </Dropdown>
             </div>
@@ -319,7 +323,7 @@ const NavbarComp = () => {
           <div id="select" className=" bg-orange-500 px-3 py-1 rounded-lg">
             <Dropdown
               inline
-              label={<p className=" text-white font-semibold">{lang.lang}</p>}
+              label={<p className=" text-white font-semibold">{langDec}</p>}
             >
               <div
                 onClick={() => {
@@ -364,14 +368,7 @@ const NavbarComp = () => {
                 >
                   <a>{lang.homepagesidebar1}</a>
                 </div>
-                <div
-                  onClick={() => {
-                    window.open(`/${link}/dental-fear`, "_self");
-                  }}
-                  className=" hover:cursor-pointer px-5 py-2 hover:text-white hover:bg-orange-500"
-                >
-                  <a>{lang.homepagesidebar4}</a>
-                </div>
+
                 <div
                   onClick={() => {
                     window.open(`/${link}/contact`, "_self");
@@ -497,6 +494,14 @@ const NavbarComp = () => {
                   className=" hover:cursor-pointer py-2 px-5 hover:text-white hover:bg-orange-500"
                 >
                   <a>{lang.hdS11}</a>
+                </div>
+                <div
+                  onClick={() => {
+                    window.open(`/${link}/dental-fear`, "_self");
+                  }}
+                  className=" hover:cursor-pointer px-5 py-2 hover:text-white hover:bg-orange-500"
+                >
+                  <a>{lang.homepagesidebar4}</a>
                 </div>
               </Dropdown>
             </Navbar.Link>
@@ -605,7 +610,9 @@ const NavbarComp = () => {
                 <Dropdown
                   inline
                   label={
-                    <p className=" text-white font-semibold">{lang.lang}</p>
+                    <>
+                      <p className=" text-white font-semibold">{langDec}</p>
+                    </>
                   }
                 >
                   <div
@@ -614,7 +621,7 @@ const NavbarComp = () => {
                     }}
                     className=" hover:cursor-pointer py-2 px-5 hover:text-white hover:bg-orange-500"
                   >
-                    <a>DEU</a>
+                    <a> DEU</a>
                   </div>
                   <div
                     onClick={() => {
@@ -660,14 +667,7 @@ const NavbarComp = () => {
                 >
                   <a>{lang.homepagesidebar1}</a>
                 </div>
-                <div
-                  onClick={() => {
-                    window.open(`/${link}/dental-fear`, "_self");
-                  }}
-                  className=" hover:cursor-pointer px-5 py-2 hover:text-white hover:bg-orange-500"
-                >
-                  <a>{lang.homepagesidebar4}</a>
-                </div>
+
                 <div
                   onClick={() => {
                     window.open(`/${link}/contact`, "_self");
@@ -795,6 +795,14 @@ const NavbarComp = () => {
                 >
                   <a>{lang.hdS11}</a>
                 </div>
+                <div
+                  onClick={() => {
+                    window.open(`/${link}/dental-fear`, "_self");
+                  }}
+                  className=" hover:cursor-pointer px-5 py-2 hover:text-white hover:bg-orange-500"
+                >
+                  <a>{lang.homepagesidebar4}</a>
+                </div>
               </Dropdown>
             </div>
             <div className="mr-6">
@@ -900,7 +908,7 @@ const NavbarComp = () => {
             <div id="select" className=" bg-orange-500 px-3 py-1 rounded-lg">
               <Dropdown
                 inline
-                label={<p className=" text-white font-semibold">{lang.lang}</p>}
+                label={<p className=" text-white font-semibold">{langDec}</p>}
               >
                 <div
                   onClick={() => {

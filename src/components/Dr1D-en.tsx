@@ -13,17 +13,20 @@ dr1MQuery.forEach((doc) => {
 });
 
 const dr1M = () => {
-  let dat: any = [];
-  for (const key in data[1]) {
-    dat.push(data[1][key]);
+  let dat = new Map<number, string>();
+  let nums: any = [];
+  for (let key in data[1]) {
+    nums.push(parseInt(data[1][key][0], 10))  
+    dat.set(parseInt(data[1][key][0]), data[1][key].slice(2))
   }
+  nums.sort((a: number, b:number)=>{return a-b});
 
   return (
     <>
       <ul>
-        {dat.map((m:any)=>(
-          <li>- {m}</li>
-        ))}
+        {nums.map((m:any)=>(
+          <li>- {dat.get(m)}</li>
+        ))} 
       </ul>
     </>
   );
