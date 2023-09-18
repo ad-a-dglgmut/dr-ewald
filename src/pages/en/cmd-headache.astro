@@ -4,12 +4,15 @@ import cmd1 from "../../img/cmd1.png";
 import cmd2 from "../../img/cmd2.png";
 import cmd3 from "../../img/cmd3.png";
 import { DATA_EN } from "@/service/data";
+import cmd from "../../img/cmd.png"
 import CMDList from "../../components/CMDList-en";
 const lang = DATA_EN;
 ---
 
 <PagesLayout title="CMD Headache" description="Dentistry and CMD Headache: Causes, Treatment, and Prevention">
   <div class={"mx-auto mt-48"}>
+
+    <img class="float-right mb-3 ml-3 rounded-lg" src={cmd} alt="" />
     <p class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle1}</p>
     <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio1}</p>
     <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle2}</h4>

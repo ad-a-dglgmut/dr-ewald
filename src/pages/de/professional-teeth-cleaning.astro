@@ -1,7 +1,9 @@
 ---
     import PagesLayout from "@/layout/PagesLayout.astro";
     import { DATA_DEU } from "@/service/data";
+    import TC from "../../img/teethcleaning.png"
     const lang = DATA_DEU
+    
 ---
 
 
@@ -9,6 +11,8 @@
 <div class={ 'mx-auto'}>
             <div class="h-48"></div>
             <div class=" bg-orange-500"><h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.ptcTitle}</h3></div>
+
+            <img class=" float-right mb-3 ml-3 rounded-lg" src={TC} alt="" />
             <h4 class="my-6 mt-6 text-xl font-semibold">{lang.ptcTitle1}</h4>
             <p class="mb-6 mt-6 text-gray-800">{lang.ptcBio}</p>
         </div>

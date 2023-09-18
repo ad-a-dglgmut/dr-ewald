@@ -5,11 +5,14 @@ import cmd2 from "../../img/cmd2.png";
 import cmd3 from "../../img/cmd3.png";
 import { DATA_DEU } from "@/service/data";
 import CMDList from "../../components/CMDList";
+import cmd from '../../img/cmd.png'
 const lang = DATA_DEU;
 ---
 
 <PagesLayout title="CMD Kopfschmerzen" description="Zahnheilkunde und CMD-Kopfschmerzen: Ursachen, Behandlung und Prävention">
   <div class={"mx-auto mt-48"}>
+
+    <img class="float-right mb-3 ml-3 rounded-lg" src={cmd} alt="" />
     <p class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle1}</p>
     <p class="mb-6 mt-6 text-gray-800">{lang.cmdBio1}</p>
     <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.cmdTitle2}</h4>
