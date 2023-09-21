@@ -2,6 +2,7 @@
     import PagesLayout from "@/layout/PagesLayout.astro";
     import c1 from "../../img/c1.jpg";
     import { DATA_DEU } from "@/service/data";
+    import kb from "../../img/kb.png"
     const lang = DATA_DEU
 ---
 
@@ -14,5 +15,6 @@
             <p class="mb-6 mt-6 text-gray-800">{lang.cBio1}</p>
             <h4 class="my-6 mt-6 text-xl font-semibold">{lang.cTitle2}</h4>
             <p class="mb-6 mt-6 font-semibold">{lang.cBio2}</p>
+            <img class="mt-10" src={kb} alt="">
         </div>
 </PagesLayout>

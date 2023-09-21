@@ -1,6 +1,7 @@
 ---
 import PagesLayout from "@/layout/PagesLayout.astro";
 import { DATA_EN } from "@/service/data";
+import mm from "../../img/mm.png"
 const lang = DATA_EN;
 ---
 
@@ -10,7 +11,7 @@ const lang = DATA_EN;
     <div class=" bg-orange-500">
       <h3 class=" bg-white ml-3 pl-4 text-2xl">{lang.hdTitle6}</h3>
     </div>
-    <img class=" float-right mb-3 ml-3" src={""} alt="" />
+    <img class=" float-right mb-3 ml-3 rounded-lg" src={mm} alt="" />
     <p class="mb-6 mt-6 text-gray-800">{lang.mmBio}</p>
   </div>
 </PagesLayout>
