@@ -533,7 +533,7 @@ export const DATA_DEU = {
     navitem6:"Ganzheitliche Kieferorthopädie",
     navitem7:"Parodontitis",
     headersubtitle1: "Ganzheitliche Zahnmedizin",
-    headersubtitle2: "„Den Menschen als Ganzes verstehen“, seit 2012",
+    headersubtitle2: "„Das Mensch als Ganzes verstehen“, seit 2012",
     homepagesidebar1: "Unsere Philosophie",
     homepagesidebar2: "Team",
     homepagesidebar3: "Galerie",

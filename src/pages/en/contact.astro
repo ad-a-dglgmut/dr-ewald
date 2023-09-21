@@ -8,6 +8,10 @@ import phone from "../../img/phone-call.png";
 import Mapbox from "../../mapbox/Mapbox.astro";
 import ContactForm from "../../components/ContactForm";
 import Toast from "../../components/Toast";
+import Building from "../../img/building.png"
+import building2 from "../../img/building2.png"
+import building3 from "../../img/building3.png"
+import building4 from "../../img/building4.png"
 const lang = DATA_EN;
 ---
 
@@ -124,6 +128,15 @@ const lang = DATA_EN;
       accesstoken="pk.eyJ1IjoiZ29zc2F1IiwiYSI6ImNsaWRlczh2eTBiYXozbHFmZ29sYjF1cXYifQ.bTtvo8YodMwY10_O1Ul2-w"
       interactive={true}
     />
+  </div>
+  <div class="mt-24 block md:flex">
+    <img class="rounded-lg mb-10 mr-10" src={Building} alt="">
+
+    <img class="rounded-lg mb-10 mr-10" src={building2} alt="">
+
+    <img class="rounded-lg mb-10 mr-10" src={building3} alt="">
+
+    <img class="rounded-lg mb-10" src={building4} alt="">
   </div>
   <div class="fixed z-50 bottom-5 left-5">
     <Toast client:only />
