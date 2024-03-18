@@ -6,7 +6,7 @@ const PDList = () => {
     <>
       {lang.pList1}
       {lang.pList2}
-      <p className=" font-semibold ml-6">{lang.pBio2}</p>
+      <p className=" font-semibold ">{lang.pBio2}</p>
       {lang.pList3}
       {lang.pList4}
     </>

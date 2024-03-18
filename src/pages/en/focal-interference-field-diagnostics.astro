@@ -2,6 +2,7 @@
     import PagesLayout from "@/layout/PagesLayout.astro"; 
     import hd3 from "../../img/hd3.jpg" 
     import { DATA_EN } from "@/service/data";
+    import slide16 from "../../img/slide16.png"
     const lang = DATA_EN
 ---
 
@@ -13,6 +14,7 @@
             <p class=" mb-6 mt-6 text-gray-800">{lang.ffdBio1}</p>
             <h4 class="mb-6 text-xl font-semibold">{lang.ffdTitle1}</h4>
             <p class=" mb-6 mt-6 text-gray-800">{lang.ffdBio2}</p>
+            <img src={slide16} alt="">
             <h4 class="mb-6 text-xl font-semibold">{lang.ffdTitlebjorn}</h4>
             <p class=" mb-6 mt-6 text-gray-800">{lang.ffdBiobjorn}</p>
             <h4 class="mb-6 text-xl font-semibold">{lang.ffdTitle2}</h4>
@@ -23,9 +25,6 @@
                 <li>{lang.ffdL2}</li>
                 <li>{lang.ffdL3}</li>
             </ul>
-            <h4 class="mb-6 text-xl font-semibold">{lang.ffdTitlebjorn}</h4>
-            <p class=" mb-6 mt-6 text-gray-800">{lang.ffdBiobjorn}</p>
-            <h4 class="mb-6 text-xl font-semibold">{lang.ffdTitle4}</h4>
             <p class="mb-6 mt-6 text-gray-800">{lang.ffdBio4}</p>
             <h4 class="mb-6 text-xl font-semibold">{lang.ffdTitle5}</h4>
             <p class="mb-6 mt-6 text-gray-800">{lang.ffdBio5}</p>

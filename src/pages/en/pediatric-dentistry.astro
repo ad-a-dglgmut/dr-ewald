@@ -2,6 +2,7 @@
     import PagesLayout from "@/layout/PagesLayout.astro";
     import p1 from "../../img/p1.png"
     import PDList from "../../components/PDList-en"
+    import slide12 from "../../img/slide12.png"
     import { DATA_EN} from "@/service/data";
     const lang = DATA_EN 
 ---
@@ -17,5 +18,6 @@
             <PDList/> 
             <h4 class="mb-6 mt-6 text-xl font-semibold">{lang.pTitle3}</h4>
             <p class="mb-6 mt-6 text-gray-800">{lang.pBio3}</p>
+            <img src={slide12} alt="">
         </div>
 </PagesLayout>

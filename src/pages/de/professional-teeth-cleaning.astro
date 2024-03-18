@@ -2,6 +2,7 @@
     import PagesLayout from "@/layout/PagesLayout.astro";
     import { DATA_DEU } from "@/service/data";
     import TC from "../../img/teethcleaning.png"
+    import slide27 from "../../img/slide27.png"
     const lang = DATA_DEU
     
 ---
@@ -15,5 +16,6 @@
             <img class=" float-right mb-3 ml-3 rounded-lg" src={TC} alt="" />
             <h4 class="my-6 mt-6 text-xl font-semibold">{lang.ptcTitle1}</h4>
             <p class="mb-6 mt-6 text-gray-800">{lang.ptcBio}</p>
+            <img src={slide27} alt="">
         </div>
 </PagesLayout>

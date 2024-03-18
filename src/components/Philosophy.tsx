@@ -4,11 +4,7 @@ import pimg from "../img/pimg.jpg";
 const Philosophy = () => {
   const lang = DATA_DEU;
   return (
-    <div
-      className={
-        "mx-auto" 
-      }
-    >
+    <div className={"mx-auto"}>
       <div className=" h-48"></div>
       <div className=" bg-orange-500 p-2 text-white font-semibold w-full mb-20 text-2xl">
         <h2>{lang.title1}</h2>
@@ -17,7 +13,11 @@ const Philosophy = () => {
       <div className="w-full flex justify-center">
         <img className="my-7 rounded-lg" src={pimg}></img>
       </div>
-      <p className="text-center text-gray-800">{lang.philosophy2}</p>
+      <div className="w-full flex justify-center">
+        <div>
+          <p className="text-center text-gray-800">{lang.philosophy2}</p>
+        </div>
+      </div>
     </div>
   );
 };
