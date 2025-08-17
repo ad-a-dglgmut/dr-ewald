@@ -24,6 +24,7 @@ export const DATA_EN = {
       back, head and knee pain.
     </p>
   ),
+
   philosophy2: (
     <>
       We integrate the advances of modern dentistry with those of biological

@@ -75,7 +75,7 @@ const Footer = () => {
                   <a href="#" className="hover:underline"></a>
                 </li>
                 <li>
-                  <a>Taxpunktwert 1.07</a>
+                  <a>Taxpunktwert 1.15</a>
                 </li>
               </ul>
             </div>

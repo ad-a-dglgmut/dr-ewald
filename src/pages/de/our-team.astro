@@ -8,6 +8,7 @@ import { DATA_DEU } from "../../service/data";
 import Dr1D from "@/components/Dr1D";
 import Dr2M from "@/components/Dr2M";
 import Dr2D from "@/components/Dr2D";
+import drIMG from "@/img/dr.jpg"
 const lang = DATA_DEU;
 const langQuery = await getDocs(collection(db, "DATA_DEU"));
 let data: string | any = [""];
@@ -81,49 +82,50 @@ if (!data[4].hasM) {
         <Dr1M />
       </div>
     </div>
-    <!-- <div class="mb-28"> -->
-    <!--   <img class="max-w-[500px] rounded-lg float-right" src={img2} alt="" /> -->
-    <!--   <h3 class="text-4xl decoration-orange-500 underline mb-16"> -->
-    <!--     {data[4].name} -->
-    <!--   </h3> -->
-    <!--   <div class=" hidden mb-16 "> -->
-    <!--     <p>{data[4].info}</p> -->
-    <!--     <p>Geburtsdatum: {data[4].birthInfo}</p> -->
-    <!--     <p>Zivilstand: {data[4].civilStatus}</p> -->
-    <!--   </div> -->
-    <!--   <span class="text-2xl decoration-orange-500 underline" -->
-    <!--     >Tätigkeiten und Ausbildungen</span -->
-    <!--   > -->
-    <!--   <div class="mt-8 mb-16 block"> -->
-    <!--     <p>- {data[4].aT1}</p> -->
-    <!--     <p>- {data[4].aT2}</p> -->
-    <!--     <p>- {data[4].aT3}</p> -->
-    <!--     <p>- {data[4].aT4}</p> -->
-    <!--     <p>- {data[4].aT5}</p> -->
-    <!--     <p>- {data[4].aT6}</p> -->
-    <!--     <p>- {data[4].aT7}</p> -->
-    <!--     <p>- {data[4].aT8}</p> -->
-    <!--     <p>- {data[4].aT9}</p> -->
-    <!--     <p>- {data[4].aT10}</p> -->
-    <!--     <p>- {data[4].aT11}</p> -->
-    <!--     <p>- {data[4].aT12}</p> -->
-    <!--     <p>- {data[4].aT13}</p> -->
-    <!--     <p>- {data[4].aT14}</p> -->
-    <!--   </div> -->
-    <!--   <span class="text-2xl decoration-orange-500 underline" -->
-    <!--     >Diplome und Weiterbildungen</span -->
-    <!--   > -->
-    <!---->
-    <!--   <div class="mt-8 mb-16 block"> -->
-    <!--     <Dr2D /> -->
-    <!--   </div> -->
-    <!--   <span class=` text-2xl decoration-orange-500 underline ${titleStyle}` -->
-    <!--     >Mitgliedschaften</span -->
-    <!--   > -->
-    <!--   <div class="mt-8 block"> -->
-    <!--     <Dr2M /> -->
-    <!--   </div> -->
-    <!-- </div> -->
+    <div class="mb-28"> 
+       <img class="max-w-[500px] rounded-lg float-right" src={drIMG} alt="" /> 
+       <h3 class="text-4xl decoration-orange-500 underline mb-16"> 
+        Dr. med.dent Stephanie Vergote
+       </h3> 
+       <div class=" font-bold text-xl mb-5 "> 
+       Fachzahnärztin für Oralchirurgie | Spezialistin für biologische Zahnheilkunde
+       </div> 
+
+       <div class=" text-xl mb-16 "> 
+       <i>An jedem Zahn hängt ein ganzer Mensch.</i> – Paracelsus  
+
+       </div> 
+       <span class="text-2xl decoration-orange-500 underline" 
+         >Bei uns vereint Dr. Vergote höchste chirurgische Präzision mit ganzheitlicher Medizin – geprägt durch ihre familiären Wurzeln in der Humanmedizin und Oralchirurgie.  
+</span> 
+       <div class="mt-8 mb-16 block"> 
+         <p>- Fachärztlich anerkannte Oralchirurgin</p> 
+         <p>- Spezialistin für biologische Zahnheilkunde</p> 
+         <p>- Zertifizierte Expertise in Keramikimplantologie</p> 
+         <p>- Anwendung des Autonomic Response Testing (ART®)</p> 
+       </div> 
+       <span class="text-2xl decoration-orange-500 underline"
+         >Medizinischer Werdegang</span> 
+       <div class="mt-8 mb-16 block">
+         <p>- Studium an Deutschlands renommiertester zahnmedizinischer Fakultät (Universität Regensburg)  
+</p> 
+         <p>- Promotion in der MKG-Chirurgie des Uniklinikums Regensburg  
+</p> 
+         <p>- 4-jährige Facharztausbildung in einer führenden Nürnberger Spezialpraxis   
+</p> 
+         <p>- Fortlaufende Mentorship durch Dr. Volz (SWISS BIOHEALTH CLINIC) in biologischer Zahnmedizin</p> 
+       </div> 
+
+       <span class="text-2xl decoration-orange-500 underline"
+         >Ihr Behandlungsschwerpunkt in unserer Praxis:</span> 
+       <div class="mt-8 mb-16 block">
+         <p class="ml-3 text-xl">Als Ihre Oralchirurgin setzt Dr. Vergote alle Eingriffe – von Implantaten bis zu chirurgischen Therapien – stets unter Beachtung des <b>biologischen Protokolls</b> um. Ihr Ansatz:</p> 
+       </br>
+         <p>- Minimale Belastung für den Organismus </p> 
+         <p>- Biokompatible Materialien</p> 
+         <p>- Ganzheitliche Betrachtung</p> 
+       </div> 
+    </div> 
     <div class="mb-28">
       <img class="max-w-[400px] rounded-lg float-right" src={img3} alt="" />
       <h3 class="text-3xl decoration-orange-500 underline mb-16">
