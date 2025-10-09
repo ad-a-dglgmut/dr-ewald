@@ -1,34 +1,33 @@
-
-
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/client";
-import React from "react";
 
 const dr1MQuery = await getDocs(
   collection(db, "DATA_EN", "doc2", "flexibleInfo")
 );
 
-let data: string | any = [""];
+let data: any = [""];
 dr1MQuery.forEach((doc) => {
   data.push(doc.data());
 });
 
-const dr1M = () => {
-  let dat: any = [];
-  for (const key in data[1]) {
-    dat.push(data[1][key]);
-  }
+const dr2D = () => {
+  const entries = Object.entries(data[1] || {});
+
+  const sorted = entries.sort(([keyA], [keyB]) => {
+    const numA = parseInt(keyA.replace(/\D/g, ""), 10);
+    const numB = parseInt(keyB.replace(/\D/g, ""), 10);
+    return numA - numB;
+  });
 
   return (
-    <>
-    
-      <ul>
-        {dat.map((m:any)=>(
-          <li>- {m}</li>
-        ))}
-      </ul>
-    </>
+    <ul>
+      {sorted.map(([key, value]) => (
+
+        // @ts-ignore
+        <li key={key}>- {value}</li>
+      ))}
+    </ul>
   );
 };
 
-export default dr1M;
+export default dr2D;

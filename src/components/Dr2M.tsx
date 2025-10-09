@@ -5,27 +5,29 @@ const dr1MQuery = await getDocs(
   collection(db, "DATA_DEU", "doc2", "flexibleInfo")
 );
 
-let data: string | any = [""];
+let data: any = [""];
 dr1MQuery.forEach((doc) => {
   data.push(doc.data());
 });
 
-const dr1M = () => {
-  let dat: any = [];
-  for (const key in data[2]) {
-    dat.push(data[2][key]);
-  }
-  
-    return (
-      <>
-        <ul>
-          {dat.map((m: any) => (
-            <li>- {m}</li>
-          ))}
-        </ul>
-      </>
-    );
-   
+const dr2M = () => {
+  const entries = Object.entries(data[2] || {});
+
+  const sorted = entries.sort(([keyA], [keyB]) => {
+    const numA = parseInt(keyA.replace(/\D/g, ""), 10);
+    const numB = parseInt(keyB.replace(/\D/g, ""), 10);
+    return numA - numB;
+  });
+
+  return (
+    <ul>
+      {sorted.map(([key, value]) => (
+
+        // @ts-ignore
+        <li key={key}>- {value}</li>
+      ))}
+    </ul>
+  );
 };
 
-export default dr1M;
+export default dr2M;
