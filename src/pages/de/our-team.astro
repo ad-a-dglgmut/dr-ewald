@@ -83,7 +83,7 @@ if (!data[4].hasM) {
       </div>
     </div>
     <div class="mb-28"> 
-       <img class="max-w-[200px] rounded-lg float-right" src={img2} alt="" /> 
+       <img class="max-w-[350px] rounded-lg float-right" src={img2} alt="" /> 
        <h3 class="text-4xl decoration-orange-500 underline mb-16"> 
         {data[4].name}
        </h3> 
@@ -94,15 +94,33 @@ if (!data[4].hasM) {
 <!--        <span class="text-2xl decoration-orange-500 underline"  -->
 <!--          >Bei uns vereint Dr. Vergote höchste chirurgische Präzision mit ganzheitlicher Medizin – geprägt durch ihre familiären Wurzeln in der Humanmedizin und Oralchirurgie.   -->
 <!-- </span>  -->
+
+      <span class="text-2xl decoration-orange-500 underline"
+        >Tätigkeiten und Ausbildungen</span
+      >
+      <div class="mt-8 mb-16 block">
+        <p>- {data[4].aT1}</p>
+        <p>- {data[4].aT2}</p>
+        <p>- {data[4].aT3}</p>
+        <p>- {data[4].aT4}</p>
+      </div>
+
+      <span class="text-2xl decoration-orange-500 underline"
+        >Diplome und Weiterbildungen</span>
        <div class="mt-8 mb-16 block"> 
+
         <Dr2D />
        </div> 
+
        <!-- <span class="text-2xl decoration-orange-500 underline" -->
        <!--   >Medizinischer Werdegang</span>  -->
        <div class="mt-8 mb-16 block">
         <Dr2M/>
        </div> 
 
+      <span class="text-2xl decoration-orange-500 underline"
+        >Mitgliedschaften</span
+      >
        <div class="mt-8 mb-16 block">
         <ul>
           <li>- SSO</li>

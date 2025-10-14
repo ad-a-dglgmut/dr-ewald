@@ -2,7 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/client";
 
 const dr1MQuery = await getDocs(
-  collection(db, "DATA_DEU", "dec1", "flexibleInfo")
+  collection(db, "DATA_DEU", "doc1", "flexibleInfo")
 );
 
 let data: any = [""];

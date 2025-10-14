@@ -46,7 +46,7 @@ let titleStyle = "";
       >
         <h2>{lang.title2}</h2>
       </div>
-      <img class="h-96 w-96 rounded-lg float-right" src={img1} alt="" />
+      <img class="max-w-[500px] rounded-lg float-right" src={img1} alt="" />
       <h3 class="text-4xl decoration-orange-500 underline mb-16">
         Dr. Nadica Ewald
       </h3>
@@ -80,7 +80,7 @@ let titleStyle = "";
       </div>
     </div>
     <div class="mb-28"> 
-       <img class="max-w-[300px] rounded-lg lg:float-right float-none" src={img2} alt="" /> 
+       <img class="max-w-[350px] rounded-lg lg:float-right float-none" src={img2} alt="" /> 
       <h3 class="text-4xl decoration-orange-500 underline mb-16"> 
         {data[4].name}
        </h3> 
@@ -88,9 +88,24 @@ let titleStyle = "";
         {data[4].info}
        </div> 
 
+
+      <span class="text-2xl decoration-orange-500 underline"
+        >Work Experience and Training</span
+      >
+      <div class="mt-8 mb-16 block">
+        <p>- {data[3].aT1}</p>
+        <p>- {data[3].aT2}</p>
+        <p>- {data[3].aT3}</p>
+        <p>- {data[3].aT4}</p>
+      </div>
 <!--        <span class="text-2xl decoration-orange-500 underline"  -->
 <!--          >Bei uns vereint Dr. Vergote höchste chirurgische Präzision mit ganzheitlicher Medizin – geprägt durch ihre familiären Wurzeln in der Humanmedizin und Oralchirurgie.   -->
 <!-- </span>  -->
+
+      <span class="text-2xl decoration-orange-500 underline"
+        >Diplomas and Further Training</span
+      >
+      <br />
        <div class="mt-8 mb-16 block"> 
         <Dr2D />
        </div> 
@@ -99,6 +114,8 @@ let titleStyle = "";
        <div class="mt-8 mb-16 block">
         <Dr2M/>
        </div> 
+
+      <span class="text-2xl decoration-orange-500 underline">Memberships</span>
        <div class="mt-8 mb-16 block">
         <ul>
           <li>- SSO</li>
